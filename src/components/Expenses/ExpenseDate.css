@@ -11,6 +11,21 @@
     width: 80px;
 }
 
+@media (max-width: 500px) {
+    .expense-date {
+        margin-right: 0px;
+    }
+    .expense-date__day {
+        font-size: larger;
+    }
+    .expense-date__month {
+        font-size: small;
+    }
+    .expense-date__year {
+        font-size: smaller;
+    }
+}
+
 .expense-date__month {
     font-weight: bold;
     font-size: medium;

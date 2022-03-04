@@ -78,7 +78,7 @@ function ExpenseFilterByYear(props) {
   return (
     <>
       <div className="filter-years">
-        <h3>Filter by Year</h3>
+        <h3 className="font-size">Filter by Year</h3>
         <select
           name="years"
           id="years"

@@ -41,13 +41,14 @@ function Form(props) {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className="top-fields">
+      <div className="fields">
         <div className="field">
           <label className="label">Title</label>
           <input
             className="field-design"
             type="text"
             id="title"
+            maxLength="50"
             value={enteredTitle}
             onChange={titleChangeHandler}
           />

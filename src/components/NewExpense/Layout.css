@@ -7,3 +7,21 @@
     margin: 20px 0px;
     border-radius: 15px;
 }
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .layout {
+        width: 70%;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    .layout {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .layout {
+        width: 90%;
+    }
+}

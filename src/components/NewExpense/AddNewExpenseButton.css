@@ -1,8 +1,6 @@
 .button-class {
     display: flex;
     justify-content: center;
-    margin-right: 20px;
-    margin-bottom: 10px;
 }
 
 .button {
@@ -14,4 +12,5 @@
     font-size: large;
     color: white;
     background-color: #380054;
+    margin: 0px !important;
 }

@@ -17,3 +17,17 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .years-dropdown {
+        font-size: medium;
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    .font-size {
+        font-size: medium;
+    }
+}

@@ -24,6 +24,11 @@ body {
     color: white;
 }
 
+.expense-name h2 {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .expense-price {
     display: flex;
     align-items: center;
