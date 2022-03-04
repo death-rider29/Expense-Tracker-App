@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Expenses from "./components/Expenses/Expenses";
+import Heading from "./components/Heading/Heading";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 const dummyData = [
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Heading />
       <NewExpense onNewExpenseRecord={storeNewExpenseHandler} />
       <Expenses expenseItems={expenseItems} />
     </div>
