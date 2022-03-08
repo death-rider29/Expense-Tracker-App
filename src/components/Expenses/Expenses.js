@@ -5,19 +5,22 @@ import ExpenseItem from "./ExpenseItem";
 import styles from "./Expenses.module.css";
 
 function Expenses(props) {
-  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString());
+  const [selectedYear, setSelectedYear] = useState(
+    new Date().getFullYear().toString()
+  );
 
   const recordChangedYear = (changedYear) => {
     setSelectedYear(changedYear);
   };
   const filteredExpenseItems = props.expenseItems.filter(
-    (item) =>
-      item.expenseDate.getFullYear().toString() === selectedYear
+    (item) => item.expenseDate.getFullYear().toString() === selectedYear
   );
 
-  let expenseContent = <h2 className={styles.center + " " + styles.whiteFont}>No Expense Found</h2>
+  let expenseContent = (
+    <h2 className={styles.center + " " + styles.whiteFont}>No Expense Found</h2>
+  );
 
-  if(filteredExpenseItems.length > 0) {
+  if (filteredExpenseItems.length > 0) {
     expenseContent = filteredExpenseItems.map((expense) => (
       <ExpenseItem
         key={expense.id}
@@ -25,13 +28,15 @@ function Expenses(props) {
         expenseDate={expense.expenseDate}
         expensePrice={expense.expensePrice}
       />
-    ))
+    ));
   }
 
-  let temp = props.expenseItems.map(item => item.expenseDate.getFullYear().toString())
-  temp = temp.filter(year => year>='2019')
+  let temp = props.expenseItems.map((item) =>
+    item.expenseDate.getFullYear().toString()
+  );
+  temp = temp.filter((year) => year >= "2019");
   let years = [...new Set(temp)];
-  years.sort()
+  years.sort();
 
   return (
     <div className={styles.center}>

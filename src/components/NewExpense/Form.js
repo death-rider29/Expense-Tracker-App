@@ -36,8 +36,8 @@ function Form(props) {
   };
 
   const cancelHandler = () => {
-      props.onCancelButtonClicked();
-  }
+    props.onCancelButtonClicked();
+  };
 
   return (
     <form onSubmit={submitHandler}>

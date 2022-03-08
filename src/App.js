@@ -7,21 +7,20 @@ import NewExpense from "./components/NewExpense/NewExpense";
 const dummyData = [
   {
     id: `exp1`,
-    expenseName:``,
+    expenseName: ``,
     expenseDate: new Date(1999, 7, 24),
     expensePrice: 0,
-  }
+  },
 ];
 
 function App() {
-
   const [expenseItems, setExpenseItems] = useState(dummyData);
 
   const storeNewExpenseHandler = (newExpenseData) => {
     setExpenseItems((prevExpenseItems) => {
       return [newExpenseData, ...prevExpenseItems];
-    })
-  }
+    });
+  };
 
   return (
     <div className="App">

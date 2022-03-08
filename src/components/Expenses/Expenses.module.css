@@ -1,35 +1,35 @@
 .expenses {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: #1e1d1e;
-    padding: 15px 5px;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #1e1d1e;
+  padding: 15px 5px;
+  border-radius: 15px;
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
-    .expenses {
-        width: 70%;
-    }
+  .expenses {
+    width: 70%;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 800px) {
-    .expenses {
-        width: 80%;
-    }
+  .expenses {
+    width: 80%;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 400px) {
-    .expenses {
-        width: 90%;
-    }
+  .expenses {
+    width: 90%;
+  }
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .whiteFont {
-    color: white;
+  color: white;
 }

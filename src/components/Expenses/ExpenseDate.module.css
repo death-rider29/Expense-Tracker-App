@@ -1,43 +1,43 @@
 .expenseDate {
-    display: flex;
-    flex-direction: column;
-    font-size: large;
-    margin-right: 20px;
-    padding: 5px;
-    border: 2px solid white;
-    background-color: #222222;
-    align-items: center;
-    color: white;
-    width: 80px;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  margin-right: 20px;
+  padding: 5px;
+  border: 2px solid white;
+  background-color: #222222;
+  align-items: center;
+  color: white;
+  width: 80px;
+  border-radius: 15px;
 }
 
 @media (max-width: 500px) {
-    .expenseDate {
-        margin-right: 0px;
-    }
-    .expenseDate__day {
-        font-size: larger;
-    }
-    .expenseDate__month {
-        font-size: small;
-    }
-    .expenseDate__year {
-        font-size: smaller;
-    }
+  .expenseDate {
+    margin-right: 0px;
+  }
+  .expenseDate__day {
+    font-size: larger;
+  }
+  .expenseDate__month {
+    font-size: small;
+  }
+  .expenseDate__year {
+    font-size: smaller;
+  }
 }
 
 .expenseDate__month {
-    font-weight: bold;
-    font-size: medium;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .expenseDate__year {
-    font-size: small;
+  font-size: small;
 }
 
 .expenseDate__day {
-    font-size: x-large;
-    font-weight: bolder;
-    margin: 2px 0px;
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 2px 0px;
 }

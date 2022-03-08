@@ -1,33 +1,33 @@
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .layout {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: #9e86ec;
-    padding: 15px 5px;
-    margin: 20px 0px;
-    margin-top: 0px;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #9e86ec;
+  padding: 15px 5px;
+  margin: 20px 0px;
+  margin-top: 0px;
+  border-radius: 15px;
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
-    .layout {
-        width: 70%;
-    }
+  .layout {
+    width: 70%;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 800px) {
-    .layout {
-        width: 80%;
-    }
+  .layout {
+    width: 80%;
+  }
 }
 
 @media (max-width: 400px) {
-    .layout {
-        width: 90%;
-    }
+  .layout {
+    width: 90%;
+  }
 }
