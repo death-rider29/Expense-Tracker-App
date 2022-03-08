@@ -1,4 +1,4 @@
-.graph-month-combo {
+.graphMonthCombo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.graph-color {
+.graphColor {
     border-radius: 10px;
     background-color: rgb(47, 47, 204);
 }

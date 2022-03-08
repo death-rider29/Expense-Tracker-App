@@ -1,4 +1,4 @@
-import "./ExpenseFilterGraphBar.css";
+import styles from "./ExpenseFilterGraphBar.module.css";
 
 function ExpenseFilterGraphBar(props) {
   let barHeight = (props.dataSpentMoney / props.maxPrice) * 150;
@@ -8,14 +8,14 @@ function ExpenseFilterGraphBar(props) {
 
   return (
     <>
-      <div className="graph-month-combo">
-        <div className="graph" title={`Rs. ${props.dataSpentMoney}`}>
+      <div className={styles.graphMonthCombo}>
+        <div className={styles.graph} title={`Rs. ${props.dataSpentMoney}`}>
           <div
-            className="graph-color"
+            className={styles.graphColor}
             style={{ height: `${barHeight}px`, maxHeight: "150px" }}
           />
         </div>
-        <div className="month">{props.dataMonth}</div>
+        <div className={styles.month}>{props.dataMonth}</div>
       </div>
     </>
   );

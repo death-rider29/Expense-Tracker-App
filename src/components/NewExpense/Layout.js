@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import AddNewExpenseButton from "./AddNewExpenseButton";
 import Form from "./Form";
 
-import './Layout.css'
+import styles from './Layout.module.css'
 
 function Layout(props) {
 
@@ -27,8 +27,8 @@ function Layout(props) {
 
 
     return(
-        <div className="center">
-            <div className="layout">
+        <div className={styles.center}>
+            <div className={styles.layout}>
                 {layoutContent}
             </div>
         </div>

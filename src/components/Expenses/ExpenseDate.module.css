@@ -1,4 +1,4 @@
-.expense-date {
+.expenseDate {
     display: flex;
     flex-direction: column;
     font-size: large;
@@ -12,30 +12,30 @@
 }
 
 @media (max-width: 500px) {
-    .expense-date {
+    .expenseDate {
         margin-right: 0px;
     }
-    .expense-date__day {
+    .expenseDate__day {
         font-size: larger;
     }
-    .expense-date__month {
+    .expenseDate__month {
         font-size: small;
     }
-    .expense-date__year {
+    .expenseDate__year {
         font-size: smaller;
     }
 }
 
-.expense-date__month {
+.expenseDate__month {
     font-weight: bold;
     font-size: medium;
 }
 
-.expense-date__year {
+.expenseDate__year {
     font-size: small;
 }
 
-.expense-date__day {
+.expenseDate__day {
     font-size: x-large;
     font-weight: bolder;
     margin: 2px 0px;

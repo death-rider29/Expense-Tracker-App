@@ -3,7 +3,7 @@ body {
     margin: 0px;
 }
 
-.expense-item {
+.expenseItem {
     display: flex;
     background-color: #4c4c4c;
     border: 3px solid #8f8f8f;
@@ -14,22 +14,22 @@ body {
     flex-wrap: wrap;
 }
 
-.expense-description {
+.expenseDescription {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
 }
 
-.expense-name {
+.expenseName {
     color: white;
 }
 
-.expense-name h2 {
+.expenseName h2 {
     word-wrap: break-word;
     word-break: break-all;
 }
 
-.expense-price {
+.expensePrice {
     display: flex;
     align-items: center;
     justify-content: center;

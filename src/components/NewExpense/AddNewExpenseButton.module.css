@@ -1,4 +1,4 @@
-.button-class {
+.buttonClass {
     display: flex;
     justify-content: center;
 }
@@ -13,4 +13,8 @@
     color: white;
     background-color: #380054;
     margin: 0px !important;
+}
+
+.button:hover {
+    cursor: pointer;
 }

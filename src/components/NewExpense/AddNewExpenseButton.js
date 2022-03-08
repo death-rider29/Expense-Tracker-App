@@ -1,4 +1,4 @@
-import './AddNewExpenseButton.css'
+import styles from './AddNewExpenseButton.module.css'
 
 function AddNewExpenseButton(props) {
 
@@ -7,8 +7,8 @@ function AddNewExpenseButton(props) {
     }
 
     return (
-        <div className="button-class">
-            <button className='button' onClick={addNewExpenseButtonHandler}>Add New Expense</button>
+        <div className={styles.buttonClass}>
+            <button className={styles.button} onClick={addNewExpenseButtonHandler}>Add New Expense</button>
         </div>
     );
 }

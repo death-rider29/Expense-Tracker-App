@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./Form.css";
+import styles from "./Form.module.css";
 
 function Form(props) {
   const curDate = new Date().toISOString().slice(0, 10);
@@ -41,11 +41,11 @@ function Form(props) {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className="fields">
-        <div className="field">
-          <label className="label">Title</label>
+      <div className={styles.fields}>
+        <div className={styles.field}>
+          <label className={styles.label}>Title</label>
           <input
-            className="field-design"
+            className={styles.fieldDesign}
             type="text"
             id="title"
             maxLength="50"
@@ -53,20 +53,20 @@ function Form(props) {
             onChange={titleChangeHandler}
           />
         </div>
-        <div className="field">
-          <label className="label">Amount</label>
+        <div className={styles.field}>
+          <label className={styles.label}>Amount</label>
           <input
-            className="field-design"
+            className={styles.fieldDesign}
             type="number"
             min={1}
             value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
-        <div className="field">
-          <label className="label">Date</label>
+        <div className={styles.field}>
+          <label className={styles.label}>Date</label>
           <input
-            className="field-design"
+            className={styles.fieldDesign}
             type="date"
             min="2019-01-01"
             max={curDate}
@@ -75,11 +75,11 @@ function Form(props) {
           />
         </div>
       </div>
-      <div className="btn-class">
-        <button type="button" className="button" onClick={cancelHandler}>
+      <div className={styles.btnClass}>
+        <button type="button" className={styles.button} onClick={cancelHandler}>
           Cancel
         </button>
-        <button type="submit" className="button">
+        <button type="submit" className={styles.button}>
           Add Expense
         </button>
       </div>

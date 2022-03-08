@@ -1,5 +1,5 @@
 import ExpenseFilterGraphBar from "./ExpenseFilterGraphBar";
-import "./ExpenseFilterGraphs.css";
+import styles from "./ExpenseFilterGraphs.module.css";
 
 function ExpenseFilterGraphs(props) {
   const moneyArr = props.graphData.map(data => data.spentMoney)
@@ -7,7 +7,7 @@ function ExpenseFilterGraphs(props) {
 
   return (
     <>
-      <div className="filter-graphs">
+      <div className={styles.filterGraphs}>
         {props.graphData.map((data) => (
           <ExpenseFilterGraphBar key={data.id} dataSpentMoney={data.spentMoney} dataMonth={data.month} maxPrice={max} />
         ))}

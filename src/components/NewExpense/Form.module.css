@@ -1,8 +1,3 @@
-.center {
-    display: flex;
-    justify-content: center;
-}
-
 .fields {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +15,7 @@
     .field {
         width: 80%;
     }
-    .btn-class {
+    .btnClass {
         justify-content: space-around !important;
         margin: 0px !important;
         margin-top: 10px !important;
@@ -36,7 +31,7 @@
     .field {
         width: 90%;
     }
-    .btn-class {
+    .btnClass {
         justify-content: space-around !important;
         margin: 0px !important;
         margin-top: 10px !important;
@@ -52,14 +47,14 @@
     font-weight: bold;
 }
 
-.field-design {
+.fieldDesign {
     height: 40px;
     border-radius: 10px;
     font-size: large;
     padding-left: 5px;
 }
 
-.btn-class {
+.btnClass {
     display: flex;
     justify-content: space-around;
     margin: 10px;

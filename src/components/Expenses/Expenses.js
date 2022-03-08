@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Card from "../UI/Card";
 import ExpenseFilterByYear from "./ExpenseFilterByYear";
 import ExpenseItem from "./ExpenseItem";
-import "./Expenses.css";
+import styles from "./Expenses.module.css";
 
 function Expenses(props) {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear().toString());
@@ -16,7 +16,7 @@ function Expenses(props) {
       item.expenseDate.getFullYear().toString() === selectedYear
   );
 
-  let expenseContent = <h2 className="center white-font">No Expense Found</h2>
+  let expenseContent = <h2 className={styles.center + " " + styles.whiteFont}>No Expense Found</h2>
 
   if(filteredExpenseItems.length > 0) {
     expenseContent = filteredExpenseItems.map((expense) => (
@@ -35,8 +35,8 @@ function Expenses(props) {
   years.sort()
 
   return (
-    <div className="center">
-      <Card className="expenses">
+    <div className={styles.center}>
+      <Card className={styles.expenses}>
         <ExpenseFilterByYear
           selectedYear={selectedYear}
           onYearChange={recordChangedYear}

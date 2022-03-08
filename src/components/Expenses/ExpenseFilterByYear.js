@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./ExpenseFilterByYear.css";
+import styles from "./ExpenseFilterByYear.module.css";
 import ExpenseFilterGraphs from "./ExpenseFilterGraphs";
 
 function ExpenseFilterByYear(props) {
@@ -77,14 +77,14 @@ function ExpenseFilterByYear(props) {
 
   return (
     <>
-      <div className="filter-years">
-        <h3 className="font-size">Filter by Year</h3>
+      <div className={styles.filterYears}>
+        <h3 className={styles.fontSize}>Filter by Year</h3>
         <select
           name="years"
           id="years"
           value={props.selectedYear}
           onChange={yearChangeHandler}
-          className="years-dropdown"
+          className={styles.yearsDropdown}
         >
           {props.yearsList.map(year => <option key={Math.random()} value={year}>{year}</option>)}
         </select>

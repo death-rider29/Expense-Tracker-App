@@ -7,9 +7,9 @@ function NewExpense(props) {
     }
 
     return (
-        <div className="new-expense">
+        <>
             <Layout onNewExpenseRecord={passNewExpenseHandler} />
-        </div>
+        </>
     );
 }
 
