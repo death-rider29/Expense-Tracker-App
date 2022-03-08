@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Card from "../UI/Card";
 import ExpenseFilterByYear from "./ExpenseFilterByYear";
 import ExpenseItem from "./ExpenseItem";
 import styles from "./Expenses.module.css";
@@ -36,7 +35,7 @@ function Expenses(props) {
 
   return (
     <div className={styles.center}>
-      <Card className={styles.expenses}>
+      <div className={styles.expenses}>
         <ExpenseFilterByYear
           selectedYear={selectedYear}
           onYearChange={recordChangedYear}
@@ -44,7 +43,7 @@ function Expenses(props) {
           yearsList={years}
         />
         {expenseContent}
-      </Card>
+      </div>
     </div>
   );
 }

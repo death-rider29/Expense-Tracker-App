@@ -4,6 +4,7 @@
     width: 60%;
     background-color: #1e1d1e;
     padding: 15px 5px;
+    border-radius: 15px;
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
